@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="icon">👤</div>
+            <h2>Register User</h2>
+            <p>Create a new user account</p>
+        </div>
+
+        <div class="form">
+
+            <div class="input-group">
+                <label for="id">User ID</label>
+                <input type="text" id="id" placeholder="Enter user ID">
+            </div>
+
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter first name">
+            </div>
+
+            <div class="input-group">
+                <label for="secondName">Second Name</label>
+                <input type="text" id="secondName" placeholder="Enter second name">
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter age">
+            </div>
+
+            <div class="input-group">
+                <label for="picture">Profile Picture</label>
+                <input type="file" id="picture" accept="image/*">
+            </div>
+
+            <button id="save">Save User</button>
+
+        </div>
+
+        <div id="display"></div>
+
+    </div>
+
+    <button class="toggle">👁️</button>
+    <div class="content"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

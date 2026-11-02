@@ -1,0 +1,321 @@
+/* 
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Registration container */
+.register-card {
+    width: 100%;
+    max-width: 850px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+/* Heading */
+.register-card h2 {
+    color: #243b64;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Form layout */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+/* Text inputs */
+.register-card input:not([type="file"]) {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d5dce8;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+    background: #f8faff;
+}
+
+.register-card input:focus {
+    border-color: #3867d6;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(56, 103, 214, 0.12);
+}
+
+/* File input */
+.register-card input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    background: #f8faff;
+    border: 1px dashed #aab8cf;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+/* Profile image */
+.register-card img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+    margin: 15px 0 20px;
+}
+
+/* Save button */
+.register-card button {
+    background: linear-gradient(135deg, #3867d6, #244bb5);
+    color: white;
+    border: none;
+    padding: 13px 35px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-card button:hover {
+    background: linear-gradient(135deg, #244bb5, #173887);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(56, 103, 214, 0.25);
+}
+
+/* User details */
+.register-card p {
+    margin-top: 20px;
+    padding: 16px;
+    background: #f0f5ff;
+    color: #344563;
+    border-radius: 9px;
+    font-size: 16px;
+}
+
+/* Eye icon */
+.password-toggle {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .register-card {
+        padding: 25px 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .register-card h2 {
+        font-size: 23px;
+    }
+
+    .register-card button {
+        width: 100%;
+    }
+} */
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    background: #eef0ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 auto 15px;
+}
+
+.header h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Form */
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    background: #f9faff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+/* File input */
+.input-group input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Save button */
+#save {
+    grid-column: 1 / -1;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#save:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(102, 126, 234, 0.35);
+}
+
+/* Display section */
+#display {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #444;
+}
+
+/* Profile images inside display */
+#display img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #eef0ff;
+    margin-bottom: 15px;
+}
+
+/* Toggle button */
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    #save {
+        grid-column: 1;
+    }
+
+    .header h2 {
+        font-size: 24px;
+    }
+}
